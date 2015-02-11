@@ -61,4 +61,9 @@ setup(
 )
 ```
 
+then compile using the command:
+
+```
+$ python setup.py build_ext --inplace 
+```
 
