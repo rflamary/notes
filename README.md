@@ -1,4 +1,4 @@
-# This repository contains several notes an linux tricks
+# Notes an linux tricks
 
 
 ## BLAS/LAPACK on Debian/Ubuntu
