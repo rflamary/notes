@@ -51,7 +51,7 @@ $ gcc -shared -pthread -fPIC -fwrapv -O2 -Wall -fno-strict-aliasing \
 ```
 
 or create a setup.py of the form 
-```
+```python
 from distutils.core import setup
 from Cython.Build import cythonize
 
