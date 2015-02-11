@@ -1,6 +1,21 @@
 
+### Default header
 
-## Parallel computations
+```python
+
+import numpy as np
+import scipy as sp
+import matplotlib.pylab as pl
+
+
+import time
+
+# parallel computations
+import multiprocessing as mp
+
+```
+
+### Parallel computations
 
 Example:
 
