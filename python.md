@@ -35,3 +35,12 @@ res=pool.map(func,l)
 ```
 
 Note that the function func has to be declared in the root of the module (pickle problem if not)
+
+
+### Cython compile
+
+```
+$ cython -a yourmod.pyx
+```
+
+
