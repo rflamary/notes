@@ -1,4 +1,4 @@
-## BLAS/LAPACK on Debian/Ubuntu
+#### BLAS/LAPACK on Debian/Ubuntu
 
 BLAS:
 ```bash
