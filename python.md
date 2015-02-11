@@ -31,7 +31,7 @@ pool = mp.Pool(nproc)
 l=[i for i in range(100)]
 
 # parallel map
-pool.map(f,l)
+res=pool.map(f,l)
 ```
 
 Note that the function func has to be declared in the root of the module (pickle problem if not)
