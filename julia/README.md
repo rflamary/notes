@@ -1,3 +1,3 @@
-## Latex examples and templates
+## Julia examples
 
 
