@@ -43,4 +43,22 @@ Note that the function func has to be declared in the root of the module (pickle
 $ cython -a yourmod.pyx
 ```
 
+Final compilation:
+
+```
+$ gcc -shared -pthread -fPIC -fwrapv -O2 -Wall -fno-strict-aliasing \
+      -I/usr/include/python2.7 -o yourmod.so yourmod.c
+```
+
+or create a setup.py of the form 
+```
+from distutils.core import setup
+from Cython.Build import cythonize
+
+setup(
+    name = "My hello app",
+    ext_modules = cythonize('hello.pyx'),  # accepts a glob pattern
+)
+```
+
 
