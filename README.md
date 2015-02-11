@@ -1,6 +1,8 @@
 # Notes an linux tricks
 
 
+[test](linux.md)
+
 ## BLAS/LAPACK on Debian/Ubuntu
 
 BLAS:
