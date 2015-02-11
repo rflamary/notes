@@ -1,0 +1,954 @@
+
+
+@article{tuia2014multiclass,
+  title={Multiclass feature learning for hyperspectral image classification: sparse and hierarchical
+solutions},
+  author={Tuia, D. and Flamary, R. and  Courty, N.},
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  year={2014},
+  abstract={In this paper, we tackle the question of discovering an effective set of spatial filters to solve hyperspectral classification problems.
+Instead of fixing a priori the filters and their parameters using expert knowledge, we let the model find them within random draws in the (possibly infinite) space of possible filters. We define an active set feature learner that includes in the model only features that improve the classifier. To this end, we consider a fast and linear classifier, multiclass logistic classification, and show that with a good representation (the filters discovered), such a simple classifier can reach at least state of the art performances. We apply the proposed active set learner in four hyperspectral image classification problems, including agricultural and urban classification at different resolutions, as well as multimodal data. We also propose a hierarchical setting, which allows to generate more complex banks of features that can better describe the nonlinearities present in the data.},
+code= {http://remi.flamary.com/soft/soft-fl-rs-svm.html},
+submited = {under revision}
+}
+
+@ARTICLE{rakoto2014dcprox,
+author = { Rakotomamonjy, A. and Flamary, R. and Gasso, G.},
+title = {DC Proximal Newton for Non-Convex Optimization Problems},
+journal = {Neural Networks and Learning Systems, IEEE Transactions on},
+year={2014}, 
+abstract = {We introduce a novel algorithm for solving learning
+problems where both the loss function and the regularizer are
+non-convex but belong to the class of difference of convex (DC)
+functions. Our contribution is a new general purpose proximal
+Newton algorithm that is able to deal with such a situation.
+The algorithm consists in obtaining a descent direction from an
+approximation of the loss function and then in performing a
+line search to ensure sufficient descent. A theoretical analysis is
+provided showing that the iterates of the proposed algorithm
+admit as limit points stationary points of the DC objective
+function. Numerical experiments show that our approach is
+more efficient than current state of the art for a problem with
+a convex loss functions and non-convex regularizer. We have
+also illustrated the benefit of our algorithm in high-dimensional
+transductive learning problem where both loss function and
+regularizers are non-convex.},
+pdf= {https://hal.archives-ouvertes.fr/file/index/docid/952445/filename/ProxNewton.pdf},
+pubtype={journal},
+submited = {under revision}
+}
+
+@ARTICLE{flamary2014analysis,
+author = {Flamary, R. and Fauvel, M. and Dalla Mura, M. and Valero, S.},
+title = {Analysis of multi-temporal classification techniques for forecasting image times series},
+journal = {Geoscience and Remote Sensing Letters (GRSL)},
+year={2014}, 
+abstract = {The classification of an annual times series by using
+data from past years is investigated in this paper. Several
+classification schemes based on data fusion, sparse learning and
+semi-supervised learning are proposed to address the problem.
+Numerical experiments are performed on a MODIS image time
+series and show that while several approaches have statistically
+equivalent performances, SVM with 1 regularization leads to a
+better interpretation of the results due to their inherent sparsity
+in the temporal domain.},
+pubtype={journal},
+  pdf = {http://remi.flamary.com/biblio/flamary2014analysis.pdf},
+submited = {accepted}
+}
+
+
+@incollection{flamary2014learning,
+title= {Learning Constrained Task Similarities in Graph-Regularized Multi-Task Learning},
+author = { Flamary, R. and  Rakotomamonjy, A. and Gasso, G.},
+booktitle = {Regularization, Optimization, Kernels, and Support Vector Machines},
+year = {2014},
+editor = {Suykens J. A.K. ,  Signoretto M., Argyriou A.},
+pdf = {http://remi.flamary.com/biblio/flamary2014learning.pdf},
+url = {http://www.taylorandfrancis.com/books/details/9781482241396/},
+abstract = {This chapter addresses the problem of learning constrained task relatedness
+in a graph-regularized multi-task learning framework. In such a context, the
+weighted adjacency matrix of a graph encodes the knowledge on task similarities 
+and each entry of this matrix can be interpreted as a hyperparameter
+of the learning problem. This task relation matrix is learned via a bilevel
+optimization procedure where the outer level optimizes a proxy of the generalization 
+errors over all tasks with respect to the similarity matrix and the
+inner level estimates the parameters of the tasks knowing this similarity matrix. 
+Constraints on task similarities are also taken into account in this optimization 
+framework and they allow the task similarity matrix to be more
+interpretable for instance, by imposing a sparse similarity matrix. Since the
+global problem is non-convex, we propose a non-convex proximal algorithm
+that provably converges to a stationary point of the problem. Empirical evidence 
+illustrates the approach is competitive compared to existing methods
+that also learn task relation and exhibits an enhanced interpretability of the
+learned task similarity matrix.},
+}
+
+
+
+@article{flamary2014starshade,
+    url = {http://hal.archives-ouvertes.fr/hal-01045219},
+    title = {{Optimization of starshades: focal plane versus pupil plane}},
+    author = {Flamary, R. and Aime, C.},
+    abstract = {{We search for the best possible transmission for an external occulter coronagraph that is dedicated to the direct observation of terrestrial exoplanets. We show that better observation conditions are obtained when the flux in the focal plane is minimized in the zone in which the exoplanet is observed, instead of the total flux received by the telescope. We describe the transmission of the occulter as a sum of basis functions. For each element of the basis, we numerically computed the Fresnel diffraction at the aperture of the telescope and the complex amplitude at its focus. The basis functions are circular disks that are linearly apodized over a few centimeters (truncated cones). We complemented the numerical calculation of the Fresnel diffraction for these functions by a comparison with pure circular discs (cylinder) for which an analytical expression, based on a decomposition in Lommel series, is available. The technique of deriving the optimal transmission for a given spectral bandwidth is a classical regularized quadratic minimization of intensities, but linear optimizations can be used as well. Minimizing the integrated intensity on the aperture of the telescope or for selected regions of the focal plane leads to slightly different transmissions for the occulter. For the focal plane optimization, the resulting residual intensity is concentrated behind the geometrical image of the occulter, in a blind region for the observation of an exoplanet, and the level of background residual starlight becomes very low outside this image. Finally, we provide a tolerance analysis for the alignment of the occulter to the telescope which also favors the focal plane optimization. This means that telescope offsets of a few decimeters do not strongly reduce the efficiency of the occulter.}},
+    language = {Anglais},
+    pages = {10},
+    journal = {Astronomy and Astrophysics},
+    year = {2014},
+   month = {Sep}, 
+volume={569}, 
+number={A28}, 
+  doi={10.1051/0004-6361/201423680},
+  pdf = {http://remi.flamary.com/biblio/flamary2014starshade.pdf},
+}
+
+@inproceedings{boisbunon2014largescale,
+  title={Large scale sparse optimization for object detection in high resolution images},
+  author={Boisbunon, A. and Flamary, R. and Rakotomamonjy, A. and Giros, A. and Zerubia, J.},
+  booktitle={IEEE Workshop in Machine Learning for Signal Processing (MLSP)},
+  year={2014},
+  pdf = {http://remi.flamary.com/biblio/boisbunon2014largescale.pdf},
+  abstract={In this work, we address the problem of detecting objects in
+images by expressing the image as convolutions between activation matrices and dictionary atoms. The activation matrices
+are estimated through sparse optimization and correspond to
+the position of the objects. In particular, we propose an efficient algorithm based on an active set strategy that is easily
+scalable and can be computed in parallel. We apply it to a
+toy image and a satellite image where the aim is to detect all
+the boats in a harbor. These results show the benefit of using
+nonconvex penalties, such as the log-sum penalty, over the
+convex l1 penalty.},
+    pubtype={conf} 
+}
+
+@inproceedings{niaf2014svmsmooth,
+  title={SVM with feature selection and smooth prediction in images: application to CAD of prostate cancer},
+  author={Niaf, E. and Flamary, R. and Rakotomamonjy, A. and Rouvi\`ere, O. and Lartizien, C.},
+  booktitle={IEEE International Conference on Image Processing (ICIP)},
+  year={2014},
+  pdf = {http://remi.flamary.com/biblio/niaf2014svmsmooth.pdf},
+  abstract={We propose a new computer-aided detection scheme for
+prostate cancer screening on multiparametric magnetic resonance (mp-MR) images. Based on an annotated training
+database of mp-MR images from thirty patients, we train
+a novel support vector machine (SVM)-inspired classifier
+which simultaneously learns an optimal linear discriminant
+and a subset of predictor variables (or features) that are most
+relevant to the classification task, while promoting spatial
+smoothness of the malignancy prediction maps. The approach uses a $\ell_1$-norm in the regularization term of the optimization problem that rewards sparsity. Spatial smoothness is
+promoted via an additional cost term that encodes the spatial
+neighborhood of the voxels, to avoid noisy prediction maps.
+Experimental comparisons of the proposed $\ell_1$-Smooth SVM
+scheme to the regular $\ell_2$-SVM scheme demonstrate a clear
+visual and numerical gain on our clinical dataset.},
+  pubtype={conf} 
+}
+
+
+@inproceedings{tuia2014grouplasso,
+  title={A group-lasso active set strategy for multiclass hyperspectral image classification},
+  author={Tuia, D. and Courty, N. and Flamary, R.},
+  booktitle={Photogrammetric Computer Vision (PCV)},
+  year={2014},
+  code= {http://remi.flamary.com/soft/soft-fl-rs-svm.html},
+  pdf = {http://remi.flamary.com/biblio/tuia2014grouplasso.pdf},
+  abstract={Hyperspectral images have a strong potential for landcover/landuse classification, since the 
+spectra of the pixels can highlight subtle differences between materials and
+provide information beyond the visible spectrum. Yet, a limitation of most
+current approaches is the hypothesis of spatial independence between
+samples: images are spatially correlated and the classification map should exhibit spatial regularity. One way of integrating spatial
+smoothness is to augment the input spectral space with filtered
+versions of the bands. However,  open questions remain, such as the
+selection of the bands to be filtered, or the filterbank to be
+used. In this paper, we consider the entirety of the possible spatial
+filters by using an incremental feature learning strategy that assesses
+whether a candidate feature would improve the model if added to the
+current input space. Our approach is based on a multiclass logistic
+classifier with group-lasso regularization. The optimization of this
+classifier yields an optimality condition, that can easily be used to assess the interest of a candidate feature without retraining the model, thus allowing drastic savings in computational time. We apply the proposed method to three challenging hyperspectral classification scenarios, including agricultural and urban data, and study both the ability of the incremental setting to learn features that always improve the model and the nature of the features selected.},
+  pubtype={conf} 
+}
+
+
+@inproceedings{lehaire2014dicolearn,
+  title={Computer-aided diagnostic for prostate cancer detection and
+characterization combining learned dictionaries and supervised
+classification},
+  author={Lehaire, J. and Flamary, R. and Rouvi\`ere, O. and Lartizien, C.},
+  booktitle={IEEE International Conference on Image Processing (ICIP)},
+  year={2014},
+  pdf = {http://remi.flamary.com/biblio/lehaire2014dicolearn.pdf},
+  abstract={This paper aims at presenting results of a computer-aided diagnostic (CAD)
+system for voxel based detection and characterization of prostate cancer in
+the peripheral zone based on multiparametric magnetic resonance (mp-MR)
+imaging. We propose an original scheme with the combination of a feature
+extraction step based on a sparse dictionary learning (DL) method and a
+supervised classification in order to discriminate normal (N), normal but
+suspect (NS) tissues as well as different classes of cancer tissue whose
+aggressiveness is characterized by the Gleason score ranging from 6 (GL6)
+to 9 (GL9). We compare the classification performance of two supervised
+methods, the linear support vector machine (SVM) and the multinomial
+logistic regression (MLR) classifiers in a binary classification task.
+Classification performances were evaluated over an mp-MR image database of
+35 patients where each voxel was labeled, based on a ground truth, by an
+expert radiologist. Results show that the proposed method in addition to
+being interpretable thanks to the sparse representation of the voxels
+compares favorably (AUC>0.8) with recent state of the art performances.
+Preliminary results on example patients data also indicate that the outputs
+cancer probability maps are correlated to the Gleason score.},
+  pubtype={conf} 
+}
+
+@inproceedings{ferrari2014distributed,
+  title={Distributed image reconstruction for very large arrays in radio astronomy},
+  author={Ferrari, A. and Mary, D. and Flamary, R. and Richard, C.},
+  booktitle={IEEE Sensor Array and Multichannel Signal Processing Workshop
+(SAM)},
+  year={2014},
+  pdf = {http://remi.flamary.com/biblio/ferrari2014distributed.pdf},
+  abstract={Current and future radio interferometric arrays such as LOFAR and SKA are
+characterized by a paradox. Their large number of receptors (up to
+millions) allow theoretically unprecedented high imaging resolution. In the
+same time, the ultra massive amounts of samples makes the data transfer and
+computational loads (correlation and calibration) order of magnitudes too
+high to allow any currently existing image reconstruction algorithm to
+achieve, or even approach, the theoretical resolution. We investigate here
+decentralized and distributed image reconstruction strategies which select,
+transfer and process only a fraction of the total data. The loss in MSE
+incurred by the proposed approach is evaluated theoretically and
+numerically on simple test cases.},
+  pubtype={conf} 
+}
+
+@inproceedings{courty2014domain,
+  title={Domain adaptation with regularized optimal
+transport},
+  author={Courty, N. and Flamary, R. and Tuia, D.},
+  booktitle={European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)},
+  year={2014},
+  pdf = {http://remi.flamary.com/biblio/courty2014domain.pdf},
+code= {http://remi.flamary.com/soft/soft-transp.html},
+  abstract={We present a new and original method to solve the domain
+adaptation problem using optimal transport. By searching for the best
+transportation plan between the probability distribution functions of a
+source and a target domain, a non-linear and invertible transformation
+of the learning samples can be estimated. Any standard machine learning method can then be applied on the transformed set, which makes
+our method very generic. We propose a new optimal transport algorithm
+that incorporates label information in the optimization: this is achieved
+by combining an efficient matrix scaling technique together with a majoration of a non-convex regularization term. By using the proposed optimal transport with label regularization, we obtain significant increase in
+performance compared to the original transport solution. The proposed
+algorithm is computationally efficient and effective, as illustrated by its
+evaluation on a toy example and a challenging real life vision dataset,
+against which it achieves competitive results with respect to state-of-the-art methods.},
+  pubtype={conf} 
+}
+
+@inproceedings{boisbunon2014active,
+  title={Active set strategy for high-dimensional non-convex sparse optimization problems},
+  author={Boisbunon, A. and Flamary, R. and Rakotomamonjy, A.},
+  booktitle={International Conference on Acoustic, Speech and Signal Processing (ICASSP)},
+  year={2014},
+  pdf = {http://remi.flamary.com/biblio/boisbunon2014active.pdf},
+  abstract={The use of non-convex sparse regularization has attracted much
+interest when
+estimating a very sparse model on high dimensional data.
+In this work we express the optimality conditions of the optimization
+problem for a
+large class of non-convex regularizers. From those conditions, we
+derive an efficient active set strategy that avoids the computing of
+unnecessary gradients. Numerical
+experiments on both generated and real life datasets  show a clear
+gain  in computational cost w.r.t. the state of the art when
+using our method to obtain very sparse solutions.},
+pres = {http://remi.flamary.com/biblio/slides_boisbunon2014active.pdf},
+    pubtype={conf} 
+}
+
+@ARTICLE{flamary2014mixed, 
+author={Flamary, R. and Jrad, N. and Phlypo, R. and Congedo, M. and Rakotomamonjy, A.}, 
+journal={Computational and Mathematical Methods in Medicine}, 
+title={Mixed-Norm Regularization for Brain Decoding}, 
+year={2014}, 
+month={April}, 
+volume={2014},  
+number={1},
+pages={1-13},
+abstract={This work investigates the use of mixed-norm regularization for sensor selection in event-related potential (ERP) based brain-computer interfaces (BCI). The classification problem is cast as a discriminative optimization framework where sensor selection is induced through the use of mixed-norms. This framework is extended to the multitask learning situation where several similar classification tasks related to different subjects are learned simultaneously. In this case, multitask learning helps in leveraging data scarcity issue yielding to more robust classifiers. For this purpose, we have introduced a regularizer that induces both sensor selection and classifier similarities. The different regularization approaches are compared on three ERP datasets showing the interest of mixed-norm regularization in terms of sensor selection. The multitask approaches are evaluated when a small number of learning examples are available yielding to significant performance improvements especially for subjects performing poorly.}, 
+doi={10.1155/2014/317056}, 
+pdf = {http://remi.flamary.com/biblio/BCI_selection.pdf},
+code= {http://remi.flamary.com/soft/soft-gsvm.html},
+pres = {http://remi.flamary.com/biblio/pres_bcisel.pdf},
+}
+
+
+@ARTICLE{niaf2014kernel, 
+author={Niaf, E. and Flamary, R. and Rouvi\`ere, O. and Lartizien, C. and  Canu, S.}, 
+journal={Image Processing, IEEE Transactions on}, 
+title={Kernel-Based Learning From Both Qualitative and Quantitative Labels: Application to Prostate Cancer Diagnosis Based on Multiparametric MR Imaging}, 
+year={2014}, 
+month={March}, 
+volume={23}, 
+number={3}, 
+pages={979-991}, 
+abstract={Building an accurate training database is challenging in supervised classification. For instance, in medical imaging, radiologists often delineate malignant and benign tissues without access to the histological ground truth, leading to uncertain data sets. This paper addresses the pattern classification problem arising when available target data include some uncertainty information. Target data considered here are both qualitative (a class label) or quantitative (an estimation of the posterior probability). In this context, usual discriminative methods, such as the support vector machine (SVM), fail either to learn a robust classifier or to predict accurate probability estimates. We generalize the regular SVM by introducing a new formulation of the learning problem to take into account class labels as well as class probability estimates. This original reformulation into a probabilistic SVM (P-SVM) can be efficiently solved by adapting existing flexible SVM solvers. Furthermore, this framework allows deriving a unique learned prediction function for both decision and posterior probability estimation providing qualitative and quantitative predictions. The method is first tested on synthetic data sets to evaluate its properties as compared with the classical SVM and fuzzy-SVM. It is then evaluated on a clinical data set of multiparametric prostate magnetic resonance images to assess its performances in discriminating benign from malignant tissues. P-SVM is shown to outperform classical SVM as well as the fuzzy-SVM in terms of probability predictions and classification performances, and demonstrates its potential for the design of an efficient computer-aided decision system for prostate cancer diagnosis based on multiparametric magnetic resonance (MR) imaging.}, 
+keywords={biological tissues;biomedical MRI;cancer;estimation theory;fuzzy systems;image classification;learning (artificial intelligence);medical image processing;probability;radiology;support vector machines;P-SVM;benign tissue;computer-aided decision system;fuzzy-SVM;kernel-based learning;malignant tissue;medical imaging;multiparametric MR imaging;multiparametric prostate magnetic resonance imaging;pattern classification;posterior probability estimation;probability support vector machine;prostate cancer diagnosis;radiologist;supervised classification;synthetic data set testing;training database;Estimation;Kernel;Labeling;Probabilistic logic;Support vector machines;Training;Uncertainty;Computer-assisted decision system;machine learning;maximal margin algorithm;medical imaging;multiparametric magnetic resonance imaging;support vector machines;uncertain labels}, 
+doi={10.1109/TIP.2013.2295759}, 
+pdf = {http://remi.flamary.com/biblio/niaf2014kernel.pdf},
+code= {http://remi.flamary.com/soft/soft-svmuncertain.html},
+ISSN={1057-7149},
+}
+
+@ARTICLE{tuia2014automatic, 
+author={Tuia, D. and Volpi, M. and Dalla Mura, M. and Rakotomamonjy, A. and Flamary, R.}, 
+journal={Geoscience and Remote Sensing, IEEE Transactions on}, 
+title={Automatic Feature Learning for Spatio-Spectral Image Classification With Sparse SVM}, 
+year={2014}, 
+month={Oct}, 
+volume={52}, 
+number={10}, 
+pages={6062-6074}, 
+abstract={Including spatial information is a key step for successful remote sensing image classification. In particular, when dealing with high spatial resolution, if local variability is strongly reduced by spatial filtering, the classification performance results are boosted. In this paper, we consider the triple objective of designing a spatial/spectral classifier, which is compact (uses as few features as possible), discriminative (enhances class separation), and robust (works well in small sample situations). We achieve this triple objective by discovering the relevant features in the (possibly infinite) space of spatial filters by optimizing a margin-maximization criterion. Instead of imposing a filter bank with predefined filter types and parameters, we let the model figure out which set of filters is optimal for class separation. To do so, we randomly generate spatial filter banks and use an active-set criterion to rank the candidate features according to their benefits to margin maximization (and, thus, to generalization) if added to the model. Experiments on multispectral very high spatial resolution (VHR) and hyperspectral VHR data show that the proposed algorithm, which is sparse and linear, finds discriminative features and achieves at least the same performances as models using a large filter bank defined in advance by prior knowledge.}, 
+keywords={Attribute profiles;feature selection;hyperspectral;mathematical morphology;texture;very high resolution}, 
+url={http://dx.doi.org/10.1109/TGRS.2013.2294724}, 
+doi={10.1109/TGRS.2013.2294724},
+pdf = {http://remi.flamary.com/biblio/tuia2014automatic.pdf},
+code= {http://remi.flamary.com/soft/soft-fl-rs-svm.html},
+ISSN={0196-2892},
+  pubtype={journal},
+}
+
+
+@ARTICLE{tnnls2014,
+author = {Laporte, L. and Flamary, R. and Canu, S. and Déjean, S. and Mothe, J.},
+title = {Nonconvex Regularizations for Feature Selection in
+Ranking With Sparse SVM},
+journal = {Neural Networks and Learning Systems, IEEE Transactions on},
+year={2014}, 
+month={June}, 
+volume={25}, 
+number={6}, 
+pages={1118-1130}, 
+keywords={Machine learning algorithms;Optimization;Prediction algorithms;Support vector machines;Training;Training data;Vectors;Feature selection;forward--backward splitting algorithms;forward??backward splitting algorithms;learning to rank;nonconvex regularizations;regularized support vector machines;sparsity;sparsity.}, 
+doi={10.1109/TNNLS.2013.2286696}, 
+abstract = {Feature selection in learning to rank has recently emerged as a crucial issue. Whereas several preprocessing approaches have been proposed, only a few works have been focused on integrating the feature selection into the learning process. In this work, we propose a general framework for feature selection in learning to rank  using SVM with a sparse regularization term. We investigate both classical convex regularizations such as l1 or weighted l1 and non-convex regularization terms such as log penalty, Minimax Concave Penalty (MCP) or lp pseudo norm with p lower than 1. Two algorithms are proposed, first an accelerated proximal approach for solving the convex problems, second a reweighted l1 scheme to address the non-convex regularizations. We conduct intensive experiments on nine datasets from Letor 3.0 and Letor 4.0 corpora. Numerical results show that the use of non-convex regularizations we propose leads to more sparsity in the resulting models while prediction performance is preserved. The number of features is decreased by up to a factor of six compared to the l1 regularization. In addition, the software is publicly available on the web.},
+file = {:http\://remi.flamary.com/biblio/laporte2014nonconvex.pdf:PDF},
+pdf = {http://remi.flamary.com/biblio/laporte2014nonconvex.pdf},
+code = {http://remi.flamary.com/soft/soft-ranksvm-nc.html},
+url = {http://dx.doi.org/10.1109/TNNLS.2013.2286696},
+pubtype={journal},
+}
+
+
+
+
+
+@inproceedings{gao2013kernel,
+  title={Kernel LMS algorithm with Forward-Backward splitting for dictionnary learning},
+  author={Gao, W. and Chen, J. and Richard, C. and Huang, J. and Flamary, R.},
+  booktitle={International Conference on Acoustic, Speech and Signal Processing (ICASSP)},
+  year={2013},
+  pdf = {http://remi.flamary.com/biblio/gao2013kernel.pdf},
+ abstract={Nonlinear adaptive filtering with kernels has become a topic of high
+interest over the last decade. A characteristics of kernel-based techniques is that they deal with kernel expansions whose number of
+terms is equal to the number of input data, making them unsuitable
+for online applications. Kernel-based adaptive filtering algorithms
+generally rely on a two-stage process at each iteration: a model order
+control stage that limits the increase in the number of terms by including only valuable kernels into the so-called dictionary, and a fil-
+ter parameter update stage. It is surprising to note that most existing
+strategies for dictionary update can only incorporate new elements
+into the dictionary. This unfortunately means that they cannot discard obsolete kernel functions, within the context of a time-varying
+environment in particular. Recently, to remedy this drawback, it has
+been proposed to associate an l1-norm regularization criterion with
+the mean-square error criterion. The aim of this paper is to provide
+theoretical results on the convergence of this approach.},
+    pubtype={conf} 
+}
+
+
+
+
+@INPROCEEDINGS{ROKS2013,
+  author = { Flamary, R. and  Rakotomamonjy, A.},
+  title = {Support Vector Machine with spatial regularization for pixel classification},
+  booktitle = {International Workshop on Advances in Regularization, Optimization, Kernel Methods and Support
+Vector Machines : theory and applications (ROKS)},
+  year = {2013},
+  abstract = {We propose in this work to regularize the output of a
+  svm classifier on pixels in order to promote smoothness in the
+  predicted image. The learning problem can be cast as a
+  semi-supervised SVM with a particular structure encoding pixel
+  neighborhood in the regularization graph. We provide several
+  optimization schemes in order to
+  solve the problem for linear SVM with l2 or l1
+  regularization and show the interest of the approach on an
+  image classification example with very few labeled pixels.},
+  pdf = {http://remi.flamary.com/biblio/ROKS2013.pdf},
+  language = {{A}nglais},
+  pubtype={conf}
+}
+
+
+@INPROCEEDINGS{IGARSS2013,
+  author = { Tuia, D. and  Volpi, M. and  Dalla Mura, M. and  Rakotomamonjy, A. and  Flamary, R.},
+  title = {Create the relevant spatial filterbank in the hyperspectral jungle},
+  booktitle = {IEEE International Geoscience and Remote Sensing Symposium (IGARSS)},
+  year = {2013},
+  abstract = {Inclusion of spatial information is known to be beneficial to the classification of hyperspectral images. However, given the high dimensionality of the data, it is difficult to know before hand which are the bands to filter or what are the filters to be applied. In this paper, we propose an active set algorithm based on a $l_1$ support vector machine that explores the (possibily infinite) space of spatial filters and retrieve automatically the filters that maximize class separation. Experiments on hyperspectral imagery confirms the power of the method, that reaches state of the art performance with small feature sets generated automatically and without prior knowledge.},
+  file = {:http\://remi.flamary.com/biblio/IGARSS2013.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/IGARSS2013.pdf},
+  language = {{A}nglais},
+  pubtype={conf}
+}
+
+
+@INPROCEEDINGS{ICPR2012,
+  author = { Tuia, D. and  Flamary, R. and  Volpi, M. and  Dalla Mura, M. and  Rakotomamonjy, A.},
+  title = { Discovering relevant spatial filterbanks for VHR image classification},
+  booktitle = {International Conference on Pattern Recognition (ICPR)},
+  year = {2012},
+  abstract = {In very high resolution (VHR) image classification it
+is common to use spatial filters to enhance the discrimination
+among landuses related to similar spectral properties
+but different spatial characteristics. However, the
+filters types that can be used are numerous (e.g. textural,
+morphological, Gabor, wavelets, etc.) and the user
+must pre-select a family of features, as well as their specific
+parameters. This results in features spaces that are
+high dimensional and redundant, thus requiring long
+and suboptimal feature selection phases. In this paper,
+we propose to discover the relevant filters as well
+as their parameters with a sparsity promoting regularization
+and an active set algorithm that iteratively adds
+to the model the most promising features. This way,
+we explore the filters/parameters input space efficiently
+(which is infinitely large for continuous parameters)
+and construct the optimal filterbank for classification
+without any other information than the types of filters
+to be used.},
+  file = {:http\://remi.flamary.com/biblio/ICPR2012.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/ICPR2012.pdf},
+  language = {{A}nglais},
+  pubtype={conf}
+}
+
+@ARTICLE{frontiers2012,
+AUTHOR = {Flamary, R. and  Rakotomamonjy, A.},
+TITLE = {Decoding finger movements from ECoG signals using switching linear models},
+JOURNAL = {Frontiers in Neuroscience},
+VOLUME = {6},
+YEAR = {2012},
+NUMBER = {29},         
+URL={http://www.frontiersin.org/Journal/Abstract.aspx?s=763&name=neuroprosthetics&ART_DOI=10.3389/fnins.2012.00029},          
+DOI={10.3389/fnins.2012.00029},      
+ISSN={1662-453X}, 
+file = {:http\://remi.flamary.com/biblio/frontiers2012.pdf:PDF},     
+pdf = {http://remi.flamary.com/biblio/frontiers2012.pdf},
+abstract={One of the most interesting challenges in ECoG-based Brain-Machine
+  Interface is movement prediction. Being able to perform such a
+  prediction paves the way to high-degree precision command for a
+  machine such as a robotic arm or robotic hands. As a witness of the
+  BCI community increasing interest towards such a problem, the fourth
+  BCI Competition provides a dataset which aim is to predict
+  individual finger movements from ECog signals. The difficulty of the problem relies on 
+the fact that there is no simple relation between ECoG signals and finger
+  movements. We propose in this paper, to estimate and 
+decode these finger flexions using switching models controlled by an hidden state. Switching
+ models can integrate prior knowledge about the decoding problem and helps in predicting fine and precise  movements. Our model is thus based on a first block which estimates which finger is moving and another
+block which, knowing which finger is moving, predicts the movements of all
+other fingers. Numerical results that have been submitted to the Competition show that the model yields high decoding performances when the hidden state is well
+    estimated. This approach achieved the second place in the BCI
+    competition with a correlation measure between real and predicted
+movements of 0.42.} 
+}
+
+
+@ARTICLE{tnn2011,
+  author = {{R}akotomamonjy, {A}. and {F}lamary, {R}. and {G}asso, {G}. and Canu, S.},
+  title = {lp-lq penalty for sparse linear and sparse multiple kernel multi-task learning},
+  journal = {IEEE Transactions on Neural Networks},
+  year = {2011},
+  note = {13 },
+  volume={22},
+  number={8},
+  pages={1307-1320},
+  abstract = {Recently, there has been a lot of interest around multi-task learning
+	({MTL}) problem with the constraints that tasks should share a common
+	sparsity profile. {S}uch a problem can be addressed through a regularization
+	framework where the regularizer induces a joint-sparsity pattern
+	between task decision functions. {W}e follow this principled framework
+	and focus on $\ell_p-\ell_q$ (with $0 \leq p \leq 1$ and $ 1 \leq
+	q \leq 2$) mixed-norms as sparsity- inducing penalties. {O}ur motivation
+	for addressing such a larger class of penalty is to adapt the penalty
+	to a problem at hand leading thus to better performances and better
+	sparsity pattern. {F}or solving the problem in the general multiple
+	kernel case, we first derive a variational formulation of the $\ell_1-\ell_q$
+	penalty which helps up in proposing an alternate optimization algorithm.
+	{A}lthough very simple, the latter algorithm provably converges to
+	the global minimum of the $\ell_1-\ell_q$ penalized problem. {F}or
+	the linear case, we extend existing works considering accelerated
+	proximal gradient to this penalty. {O}ur contribution in this context
+	is to provide an efficient scheme for computing the $\ell_1-\ell_q$
+	proximal operator. {T}hen, for the more general case when $0 < p
+	< 1$, we solve the resulting non-convex problem through a majorization-minimization
+	approach. {T}he resulting algorithm is an iterative scheme which,
+	at each iteration, solves a weighted $\ell_1-\ell_q$ sparse {MTL}
+	problem. {E}mpirical evidences from toy dataset and real-word datasets
+	dealing with {BCI} single trial {EEG} classification and protein
+	subcellular localization show the benefit of the proposed approaches
+	and algorithms.},
+  affiliation = {{L}aboratoire d'{I}nformatique, de {T}raitement de l'{I}nformation
+	et des {S}yst{\`e}mes - {LITIS} - {I}nstitut {N}ational des {S}ciences
+	{A}ppliqu{\'e}es de {R}ouen - {U}niversit{\'e} du {H}avre - {U}niversit{\'e}
+	de {R}ouen : {EA}4108 },
+  file = {:http\://remi.flamary.com/biblio/TNN2011.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/TNN2011.pdf},
+  hal_id = {hal-00509608},
+  keywords = {multi-task, multiple kernel, mixed-norm, sparsity},
+  language = {{A}nglais},
+  url = {http://hal.archives-ouvertes.fr/hal-00509608/fr/},
+  code = {http://asi.insa-rouen.fr/enseignants/~arakoto/code/SparseMTL.html},
+  pubtype={journal}
+}
+
+@ARTICLE{ml2012,
+  author = {{R}akotomamonjy, {A}. and {F}lamary, {R}. and Yger, {F}.},
+  title = {Learning with infinitely many features},
+  journal = {Machine Learning},
+  year = {2012},
+  volume={91},
+  number={1},
+  pages={43-66},
+  abstract = {
+We propose a principled framework for learning with infinitely many
+features, situations that are usually induced by continuously parametrized feature
+extraction methods. Such cases occur for instance when considering Gabor-based
+features in computer vision problems or when dealing with Fourier features for
+kernel approximations. We cast the problem as the one of finding a finite subset of
+features that minimizes a regularized empirical risk. After having analyzed the optimality conditions of such a problem, we propose a simple algorithm which has the
+
+avour of a column-generation technique. We also show that using Fourier-based
+features, it is possible to perform approximate infinite kernel learning. Our experimental results on several datasets show the benefits of the proposed approach in
+several situations including texture classification and large-scale kernelized problems (involving about 100 thousand examples).},
+  affiliation = {{L}aboratoire d'{I}nformatique, de {T}raitement de l'{I}nformation
+	et des {S}yst{\`e}mes - {LITIS} - {I}nstitut {N}ational des {S}ciences
+	{A}ppliqu{\'e}es de {R}ouen - {U}niversit{\'e} du {H}avre - {U}niversit{\'e}
+	de {R}ouen : {EA}4108 },
+  file = {:http\://remi.flamary.com/biblio/ml2012.pdf:PDF},
+  pres = {http://remi.flamary.com/biblio/ISIS_2012.pdf},
+  url = {http://hal.archives-ouvertes.fr/hal-00735926},
+  pdf = {http://remi.flamary.com/biblio/ml2012.pdf},
+  code = {https://sites.google.com/site/alainrakotomamonjy/learninfinitefeat.zip},
+  hal_id = {hal-00509608},
+  keywords = {multi-task, multiple kernel, mixed-norm, sparsity},
+  language = {{A}nglais},
+  pubtype={journal}
+  
+}
+
+@ARTICLE{ieeesp2012,
+ url = {http://hal.archives-ouvertes.fr/hal-00528917/},
+    title = {{Large Margin Filtering}},
+    author = {Flamary, R. and Tuia, D. and Labb{\'e}, B. and Camps-Valls, G. and Rakotomamonjy, A.},
+    year={2012},
+  journal = {IEEE Transactions Signal Processing},
+  volume={60},
+  number={2},
+  pages={648-659},
+    abstract = {Many signal processing problems are tackled by
+filtering the signal for subsequent feature classification or regression. Both steps are critical and need to be designed carefully
+to deal with the particular statistical characteristics of both
+signal and noise. Optimal design of the filter and the classifier are typically aborded in a separated way, thus leading
+to suboptimal classification schemes. This paper proposes an
+efficient methodology to learn an optimal signal filter and a
+support vector machine (SVM) classifier jointly. In particular,
+we derive algorithms to solve the optimization problem, prove its
+theoretical convergence, and discuss different filter regularizers
+for automated scaling and selection of the feature channels. The
+latter gives rise to different formulations with the appealing
+properties of sparseness and noise-robustness. We illustrate the
+performance of the method in several problems. First, linear
+and nonlinear toy classification examples, under the presence
+of both Gaussian and convolutional noise, show the robustness
+of the proposed methods. The approach is then evaluated on
+two challenging real life datasets: BCI time series classification
+and multispectral image segmentation. In all the examples, large
+margin filtering shows competitive classification performances
+while offering the advantage of interpretability of the filtered
+channels retrieved.},
+    keywords = {Sequence labeling; time series classification; large margin methods; support vector machine},
+    language = {Anglais},
+    affiliation = {Laboratoire d'Informatique, de Traitement de l'Information et des Syst{\`e}mes - LITIS - Institut National des Sciences Appliqu{\'e}es de Rouen - Universit{\'e} du Havre - Universit{\'e} de Rouen : EA4108 - Image Processing Laboratory - IPL - Universitat de Val{\`e}ncia},
+ file = {:http\://remi.flamary.com/biblio/LM_filtering.pdf:PDF},
+ pdf = {http://remi.flamary.com/biblio/LM_filtering.pdf},
+  code = {http://remi.flamary.com/soft/soft-filtersvm.html},
+  pubtype={journal}
+}
+
+
+@article{jrad2011swsvm,
+  author={N. Jrad and M. Congedo and R. Phlypo and S. Rousseau and R. Flamary and F. Yger and A. Rakotomamonjy},
+  title={sw-SVM: sensor weighting support vector machines for EEG-based brain–computer interfaces},
+  journal={Journal of Neural Engineering},
+  volume={8},
+  number={5},
+  pages={056004},
+  url={http://stacks.iop.org/1741-2552/8/i=5/a=056004},
+  year={2011},
+  file = {:http\://remi.flamary.com/biblio/JNE2011.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/JNE2011.pdf},
+  abstract={In many machine learning applications, like brain–computer interfaces (BCI), high-dimensional sensor array data are available. Sensor measurements are often highly correlated and signal-to-noise ratio is not homogeneously spread across sensors. Thus, collected data are highly variable and discrimination tasks are challenging. In this work, we focus on sensor weighting as an efficient tool to improve the classification procedure. We present an approach integrating sensor weighting in the classification framework. Sensor weights are considered as hyper-parameters to be learned by a support vector machine (SVM). The resulting sensor weighting SVM (sw-SVM) is designed to satisfy a margin criterion, that is, the generalization error. Experimental studies on two data sets are presented, a P300 data set and an error-related potential (ErrP) data set. For the P300 data set (BCI competition III), for which a large number of trials is available, the sw-SVM proves to perform equivalently with respect to the ensemble SVM strategy that won the competition. For the ErrP data set, for which a small number of trials are available, the sw-SVM shows superior performances as compared to three state-of-the art approaches. Results suggest that the sw-SVM promises to be useful in event-related potentials classification, even with a small number of training trials.},
+  pubtype={journal}
+}
+
+% This file was created with JabRef 2.6.
+% Encoding: UTF-8
+
+
+@INPROCEEDINGS{isbi2012,
+  author = {{N}iaf, {E}. and {F}lamary, {R}. and {C}anu, {S}. and {R}ouvi\`ere, {O}. and {L}artizien, {C}.},
+  title = {Handling learning samples uncertainties in SVM : application to MRI-based prostate cancer Computer-Aided Diagnosis},
+  booktitle = {{IEEE} International Symposium on Biomedical Imaging },
+  year = {2012},
+  abstract = {Building an accurate training database is challenging in supervised classification. Radiologists often delineate malignant and benign tissues without access to the ground truth, 
+  thus leading to uncertain datasets. We propose to deal 
+  with this uncertainty by introducing probabilistic 
+  labels in the learning stage. We introduce a probabilistic support vector machine (P-SVM) inspired from the 
+  regular C-SVM formulation allowing to consider class labels through a hinge loss and probability estimates using 
+  epsilon-insensitive cost function together with a minimum norm 
+   (maximum margin) objective. Solution is used for both decision and posterior probability estimation.},
+  affiliation = {{C}entre de recherche en applications et traitement de l'image pour
+	la sant{\'e} - {CREATIS} - {INSERM} : {U}1044 - {INSA} - {I}nstitut
+	{N}ational des {S}ciences {A}ppliqu{\'e}es - {L}aboratoire d'{I}nformatique,
+	de {T}raitement de l'{I}nformation et des {S}yst{\`e}mes - {LITIS}
+	- {I}nstitut {N}ational des {S}ciences {A}ppliqu{\'e}es de {R}ouen
+	- {U}niversit{\'e} du {H}avre - {U}niversit{\'e} de {R}ouen : {EA}4108
+	},
+  day = {28},
+  language = {{A}nglais},
+  url = {http://hal.archives-ouvertes.fr/hal-00582789/},
+  code = {http://remi.flamary.com/soft/soft-svmuncertain.html},
+  pres = {http://remi.flamary.com/biblio/poster_ISBI12.pdf},
+  pubtype={conf}
+}
+
+
+@INPROCEEDINGS{ESANN2011,
+  author = {{F}lamary, {R}. and Yger, F. and Rakotomamonjy, {A}.},
+  title = { Selecting from an infinite set of features in SVM},
+  booktitle = {European Symposium on Artificial Neural Networks},
+  year = {2011},
+  abstract = {Dealing with the continuous parameters of a feature extraction method has always 
+been a difficult task that is usually solved by
+cross-validation. In this paper, we propose an active set algorithm for
+selecting automatically these parameters in a SVM classification context.
+Our experiments on texture recognition and BCI signal classification show
+that optimizing the feature parameters in a continuous space while learning
+ the decision function yields to better performances than using fixed
+parameters obtained from a grid sampling},
+  affiliation = {{L}aboratoire d'{I}nformatique, de {T}raitement de l'{I}nformation
+	et des {S}yst{\`e}mes - {LITIS} - {I}nstitut {N}ational des {S}ciences
+	{A}ppliqu{\'e}es de {R}ouen - {U}niversit{\'e} du {H}avre - {U}niversit{\'e}
+	de {R}ouen : {EA}4108 },
+  file = {:http\://remi.flamary.com/biblio/ESANN2011.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/ESANN2011.pdf},
+  language = {{A}nglais},
+  url = {http://hal.archives-ouvertes.fr/hal-00626168/},
+  pres = {http://remi.flamary.com/biblio/poster_ESANN2011.pdf},
+  pubtype={conf}
+}
+
+@INPROCEEDINGS{CBMI2011,
+  author = {{F}lamary, {R}. and {A}nguera, {X}. and {O}liver, {N}.},
+  title = { {S}poken {W}ord{C}loud: {C}lustering {R}ecurrent {P}atterns in {S}peech},
+  booktitle = {{I}nternational {W}orkshop on {C}ontent-{B}ased {M}ultimedia {I}ndexing},
+  year = {2011},
+  note = {{D}ynamic {T}ime warping, {M}ultimedia indexing, speech processing
+	},
+  abstract = {{T}he automatic summarization of speech recordings is typically carried
+	out as a two step process: the speech is first decoded using an automatic
+	speech recognition system and the resulting text transcripts are
+	processed to create the summary. {H}owever, this approach might not
+	be suitable with adverse acoustic conditions or languages with limited
+	training resources. {I}n order to address these limitations, we propose
+	in this paper an automatic speech summarization method that is based
+	on the automatic discovery of patterns in the speech: recurrent acoustic
+	patterns are first extracted from the audio and then are clustered
+	and ranked according to the number of repetitions in the recording.
+	{T}his approach allows us to build what we call a "{S}poken {W}ord{C}loud"
+	because of its similarity with text-based word-clouds. {W}e present
+	an algorithm that achieves a cluster purity of up to 90% and an inverse
+	purity of 71% in preliminary experiments using a small dataset of
+	connected spoken words.},
+  affiliation = {{L}aboratoire d'{I}nformatique, de {T}raitement de l'{I}nformation
+	et des {S}yst{\`e}mes - {LITIS} - {I}nstitut {N}ational des {S}ciences
+	{A}ppliqu{\'e}es de {R}ouen - {U}niversit{\'e} du {H}avre - {U}niversit{\'e}
+	de {R}ouen : {EA}4108 - {T}elefonica {I}nvestigaci{\'o}n y {D}esarrollo
+	- {T}elefonica {I}+{D} - {T}elefonica {G}roup },
+  file = {:http\://remi.flamary.com/biblio/CBMI2011.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/CBMI2011.pdf},
+  hal_id = {hal-00582799},
+  language = {{A}nglais},
+  url = {http://hal.archives-ouvertes.fr/hal-00582799/},
+  pubtype={conf}
+}
+
+@INPROCEEDINGS{ssp2011,
+  author = {{N}iaf, {E}. and {F}lamary, {R}. and {L}artizien, {C}. and {C}anu, {S}.},
+  title = {{H}andling uncertainties in {SVM} classification},
+  booktitle = {{IEEE} {W}orkshop on {S}tatistical {S}ignal {P}rocessing },
+  year = {2011},
+  abstract = {{T}his paper addresses the pattern classification problem arising
+	when available target data include some uncertainty information.
+	{T}arget data considered here is either qualitative (a class label)
+	or quantitative (an estimation of the posterior probability). {O}ur
+	main contribution is a {SVM} inspired formulation of this problem
+	allowing to take into account class label through a hinge loss as
+	well as probability estimates using epsilon-insensitive cost function
+	together with a minimum norm (maximum margin) objective. {T}his formulation
+	shows a dual form leading to a quadratic problem and allows the use
+	of a representer theorem and associated kernel. {T}he solution provided
+	can be used for both decision and posterior probability estimation.
+	{B}ased on empirical evidence our method outperforms regular {SVM}
+	in terms of probability predictions and classification performances.},
+  affiliation = {{C}entre de recherche en applications et traitement de l'image pour
+	la sant{\'e} - {CREATIS} - {INSERM} : {U}1044 - {INSA} - {I}nstitut
+	{N}ational des {S}ciences {A}ppliqu{\'e}es - {L}aboratoire d'{I}nformatique,
+	de {T}raitement de l'{I}nformation et des {S}yst{\`e}mes - {LITIS}
+	- {I}nstitut {N}ational des {S}ciences {A}ppliqu{\'e}es de {R}ouen
+	- {U}niversit{\'e} du {H}avre - {U}niversit{\'e} de {R}ouen : {EA}4108
+	},
+  day = {28},
+  file = {:http\://remi.flamary.com/biblio/SSP2011.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/SSP2011.pdf},
+  hal_id = {hal-00582789},
+  language = {{A}nglais},
+  url = {http://hal.archives-ouvertes.fr/hal-00582789/},
+  code = {http://remi.flamary.com/soft/soft-svmuncertain.html},
+  pres = {http://remi.flamary.com/biblio/poster_SSP2011.pdf},
+  pubtype={conf}
+}
+
+
+@INPROCEEDINGS{flamaryicassp210,
+  author = {Flamary, R. and Labb\'e, B. and Rakotomamonjy, A.},
+  title = {Large margin filtering for signal sequence labeling},
+  booktitle = {International Conference on Acoustic, Speech and Signal Processing
+	2010},
+  year = {2010},
+  abstract = {Signal Sequence Labeling consists in predicting a sequence of labels
+	given an observed sequence of samples. A naive way is to ﬁlter the
+	signal in order to reduce the noise and to apply a classiﬁcation
+	algorithm on the ﬁltered samples. We propose in this paper to jointly
+	learn the ﬁlter with the classiﬁer leading to a large margin ﬁltering
+	for classiﬁcation. This method allows to learn the optimal cutoff
+	frequency and phase of the ﬁlter that may be different from zero.
+	Two methods are proposed and tested on a toy dataset and on a real
+	life BCI dataset from BCI Competition III.},
+  file = {:http\://remi.flamary.com/biblio/ICASSP2010.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/ICASSP2010.pdf},
+  url = {http://hal.archives-ouvertes.fr/hal-00497300/},
+  code = {http://remi.flamary.com/soft/soft-filtersvm.html},
+  pres = {http://remi.flamary.com/biblio/posterICASSP2010.pdf},
+  pubtype={conf}
+}
+
+
+
+
+
+@INPROCEEDINGS{flamcap2010,
+  author = {Flamary, R. and Labb{\'e}, B. and Rakotomamonjy, A.},
+  title = {Filtrage vaste marge pour l'\'etiquetage s\'equentiel de signaux},
+  booktitle = {Conference en Apprentissage CAp},
+  year = {2010},
+  abstract = {Ce papier traite de l’étiquetage séquentiel de signaux, c’est-à-dire
+	de discrimination pour des échantillons temporels. Dans ce contexte,
+	nous proposons une méthode d’apprentissage pour un ﬁltrage vaste-marge
+	séparant au mieux les classes. Nous apprenons ainsi de manière jointe
+	un SVM sur des échantillons et un ﬁltrage temporel de ces échantillons.
+	Cette méthode permet l’étiquetage en ligne d’échantillons temporels.
+	Un décodage de séquence hors ligne optimal utilisant l’algorithme
+	de Viterbi est également proposé. Nous introduisons différents termes
+	de régularisation, permettant de pondérer ou de sélectionner les
+	canaux automatiquement au sens du critère vaste-marge. Finalement,
+	notre approche est testée sur un exemple jouet de signaux non-linéaires
+	ainsi que sur des données réelles d’Interface Cerveau-Machine. Ces
+	expériences montrent l’intérêt de l’apprentissage supervisé d’un
+	ﬁltrage temporel pour l’étiquetage de séquence.},
+  file = {:http\://remi.flamary.com/biblio/CAP2010.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/CAP2010.pdf},
+  url = {http://hal.archives-ouvertes.fr/hal-00497296/},
+  code = {http://remi.flamary.com/soft/soft-filtersvm.html},
+  pres = {http://remi.flamary.com/biblio/slidescap2010.pdf},
+  pubtype={con-fr}
+}
+
+@INPROCEEDINGS{mlsp10,
+  author = {Tuia, D. and Camps-Valls, G. and Flamary, R. and Rakotomamonjy, A.},
+  title = {Learning spatial filters for multispectral image segmentation},
+  booktitle = {IEEE Workshop in Machine Learning for Signal Processing (MLSP)},
+  year = {2010},
+  abstract = {We present a novel ﬁltering method for multispectral satellite image
+	classiﬁcation. The proposed method learns a set of spatial ﬁlters
+	that maximize class separability of binary support vector machine
+	(SVM) through a gradient descent approach. Regularization issues
+	are discussed in detail and a Frobenius-norm regularization is proposed
+	to efﬁciently exclude uninformative ﬁlters coefﬁcients. Experiments
+	carried out on multiclass one-against-all classiﬁcation and target
+	detection show the capabilities of the learned spatial ﬁlters},
+  file = {:http\://remi.flamary.com/biblio/MLSP10.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/MLSP10.pdf},  
+owner = {flam},
+  timestamp = {2009.05.10},
+  url = {http://hal.archives-ouvertes.fr/hal-00528923/},
+  code = {http://remi.flamary.com/soft/soft-filtersvm.html},
+  pres = {http://remi.flamary.com/biblio/PresMLSP10.pdf},
+  pubtype={conf}
+}
+
+@INPROCEEDINGS{cap09,
+  author = {Flamary, R. and Rakotomamonjy, A. and Gasso, G. and Canu, S.},
+  title = {Selection de variables pour l'apprentissage simultanée de tâches},
+  booktitle = {Conférence en Apprentissage (CAp'09)},
+  year = {2009},
+  abstract = {Cet article traite de la sélection de variables pour l’apprentissage
+	simultanée de taches de discrimination SVM . Nous formulons ce problème
+	comme étant un apprentissage multi-taches avec pour terme de régularisation
+	une norme mixte de type `p `2 avec p <1 . Cette dernière permet d’obtenir
+	des modèles de discrimination pour chaque tâche, utilisant un même
+	sous-ensemble des variables. Nous proposons tout d’abord un algorithme
+	permettant de résoudre le problème d’apprentissage lorsque la norme
+	mixte est convexe (p = 1). Ensuite, à l’aide de la programmation
+	DC, nous traitons le cas non-convexe (p < 1) . Nous montrons que
+	ce dernier cas peut être résolu par un algorithme itératif où, à
+	chaque itération, un problème basé sur la norme mixte `1 `2 est résolu.
+	Nos expériences montrent l’interêt de la méthode sur quelques problèmes
+	de discriminations simultanées.},
+  file = {:http\://remi.flamary.com/biblio/cap2009.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/cap2009.pdf},
+  owner = {flam},
+  timestamp = {2009.05.10},
+  url = {http://hal.archives-ouvertes.fr/hal-00452332/},
+  code = {http://asi.insa-rouen.fr/enseignants/~arakotom/code/SparseMTL.html},
+  pubtype={con-fr}
+}
+
+@INPROCEEDINGS{mlsp09,
+  author = {R. Flamary and J.L. Rose and A. Rakotomamonjy and S. Canu},
+  title = {Variational Sequence Labeling},
+  booktitle = {IEEE Workshop in Machine Learning for Signal Processing (MLSP)},
+  year = {2009},
+  abstract = {Sequence labeling is concerned with processing an input data sequence
+	and producing an output sequence of discrete labels which characterize
+	it. Common applications includes speech recognition, language processing
+	(tagging, chunking) and bioinformatics. Many solutions have been
+	proposed to partially cope with this problem. These include probabilistic
+	models (HMMs, CRFs) and machine learning algorithm (SVM, Neural nets).
+	In practice, the best results have been obtained by combining several
+	of these methods. However, fusing different signal segmentation methods
+	is not straightforward, particularly when integrating prior information.
+	In this paper the sequence labeling problem is viewed as a multi
+	objective optimization task. Each objective targets a different aspect
+	of sequence labelling such as good classiﬁcation, temporal stability
+	and change detection. The resulting optimization problem turns out
+	to be non convex and plagued with numerous local minima. A region
+	growing algorithm is proposed as a method for ﬁnding a solution to
+	this multi functional optimization task. The proposed algorithm is
+	evaluated on both synthetic and real data (BCI dataset). Results
+	are encouraging and better than those previously reported on these
+	datasets.},
+  file = {:http\://remi.flamary.com/biblio/VarSeqLab.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/VarSeqLab.pdf},
+  owner = {flam},
+  timestamp = {2009.05.10},
+  url = {http://hal.archives-ouvertes.fr/hal-00493553/},
+  pres = {http://remi.flamary.com/biblio/presmlsp09.pdf},
+  pubtype={conf}
+
+}
+
+% This file was created with JabRef 2.6.
+% Encoding: UTF-8
+
+
+@CONFERENCE{nipsworkshop2009,
+  author = {Flamary, R. and Labb\'e, B. and Rakotomamonjy, A.},
+  title = {Large margin filtering for signal segmentation},
+  booktitle = {NIPS Workshop on Temporal Segmentation},
+  year = {2009},
+  howpublished = {NIPS Workshop in Temporal Segmentation},
+  url = {http://www.harchaoui.eu/zaid/workshops/nips09/index.html},
+  pubtype={workshop}
+}
+
+@CONFERENCE{snowbird09,
+  author = {R. Flamary and A. Rakotomamonjy and G. Gasso and  S. Canu},
+  title = {SVM Multi-Task Learning and Non convex Sparsity Measure},
+  booktitle = {The Learning Workshop},
+  year = {2009},
+  file = {:http\://remi.flamary.com/biblio/snowbird09.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/snowbird09.pdf},
+  howpublished = {The Learning Workshop (Snowbird)},
+  owner = {flam},
+  timestamp = {2009.05.10},
+  url = {http://snowbird.djvuzone.org/2009/schedule.html},
+  pubtype={workshop}
+}
+
+@PHDTHESIS{thesis2011,
+  author = {Flamary, R.},
+  title = {Apprentissage statistique pour le signal: applications aux interfaces cerveau-machine},
+  school = {Laboratoire LITIS, Université de Rouen},
+  year = {2011},
+  file = {:http\://remi.flamary.com/biblio/these_flamary.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/these_flamary.pdf},
+  owner = {flam},
+  url = {http://tel.archives-ouvertes.fr/tel-00687501},
+  pres = {http://remi.flamary.com/biblio/slides_these.pdf},
+  abstract = {Brain Computer Interfaces (BCI) require the use of statistical
+  learning methods for signal recognition. In this thesis we propose a
+  general approach using prior knowledge on the problem at hand
+  through regularization. To this end, we learn jointly the classifier
+  and the feature extraction step in a unique optimization problem. We
+  focus on the problem of sensor selection, and propose several
+  regularization terms adapted to the problem.
+
+  Our first contribution  is a filter learning
+  method called large margin filtering. It consists in learning a
+  filtering maximizing the margin between samples of each classe so
+  as to adapt to the properties of the features. In addition, this
+  approach is easy to interpret and can lead to the selection of the
+  most relevant sensors. Numerical experiments on a real life BCI
+  problem and a 2D image classification show the good behaviour of our
+  method both in terms of performance and interpretability.
+
+  The second contribution is a general sparse multitask learning
+  approach. Several classifiers are learned jointly and discriminant
+  kernels for all the tasks are automatically selected. We propose
+  some efficient algorithms and numerical experiments have shown the
+  interest of our approach.
+
+  Finally, the third contribution is a direct application of the
+  sparse multitask learning to a BCI event-related potential
+  classification problem. We propose an adapted regularization term
+  that promotes both sensor selection and similarity between the
+  classifiers. Numerical experiments show that the calibration time of
+  a BCI can be drastically reduced thanks to the proposed multitask
+  approach.},
+  pubtype={thesis}
+}
+
+
+@MASTERSTHESIS{mrep08,
+  author = {Flamary, R.},
+  title = {Filtrage de surfaces obtenues {\`a} partir de structures M-Rep (M-Rep
+	obtained surface filtering)},
+  school = {Laboratoire CREATIS-LRMN, INSA de Lyon},
+  year = {2008},
+  file = {:http\://remi.flamary.com/biblio/MemoireFlamary.pdf:PDF},
+  pdf = {http://remi.flamary.com/biblio/MemoireFlamary.pdf},
+  localfile = {http://flam157.free.fr/wp-content/MemoireFlamary.pdf:PDF},
+  owner = {flam},
+  timestamp = {2009.03.01},
+  url = {http://remi.flamary.com/biblio/MemoireFlamary.pdf},
+  pubtype={master}
+}
+

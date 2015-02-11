@@ -1,3 +1,5 @@
+## Linux tricks
+
 #### BLAS/LAPACK on Debian/Ubuntu
 
 BLAS:
