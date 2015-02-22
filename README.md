@@ -1,4 +1,4 @@
-## Notes an tricks
+## Notes and tricks
 
 
 * [Linux and Ubuntu](linux.md)
