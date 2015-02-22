@@ -2,6 +2,7 @@
 
 
 * [Linux and Ubuntu](linux.md)
+* [sed](sed.md)
 
 * [Inkscape](inkscape.md)
 
