@@ -6,6 +6,7 @@ The tricks are listed in the following documents.
 
 * [Linux and Ubuntu](linux.md)
 * [sed](sed.md)
+* [git](git.md)
 * [Inkscape](inkscape.md)
 * [Python](python.md)
 * [Matlab](matlab.md)
