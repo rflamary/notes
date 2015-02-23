@@ -22,3 +22,12 @@ Note that the number of threads used by openblas can be set manually by:
 ```bash
 $ export OPENBLAS_NUM_THREADS=1
 ```
+
+
+#### Install certificate for ssh connexion
+
+In order to allow certificate based connexion to a ssh server
+
+```bash
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub login@server
+```
