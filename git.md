@@ -3,7 +3,7 @@
 
 #### Set url origin
 
-This can be usefull for automatic ssh commit.
+This can be usefull for ssh commit with no password.
 
 For this repository: 
 
