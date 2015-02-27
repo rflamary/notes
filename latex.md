@@ -1,6 +1,6 @@
 ## Latex tricks
 
-
+### Beamer
 #### Beamer subsection toc
 
 ```latex
@@ -22,3 +22,18 @@
 ```
 
 For those who don't like the beamer math foont.
+
+### Misc
+#### Context sensitive quotation
+Idea: automatically get quotation according to the language.
+
+First import the package:
+```latex
+\usepackage[babel=true]{csquotes}
+```
+
+Then, instead of standard quotation use:
+```latex
+A  superb quote:  \enquote{This  superb  quote subquotes:  \enquote{nice
+isn't it ?}}
+```
