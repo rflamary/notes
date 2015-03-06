@@ -13,4 +13,4 @@ The tricks are listed in the following documents.
 * [Latex](latex.md)
 * [Julia](julia.md)
 
-Note that additionnal scripts are available in de subfolders.
+Note that additionnal scripts are available in the subfolders.
