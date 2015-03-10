@@ -37,3 +37,26 @@ Then, instead of standard quotation use:
 A  superb quote:  \enquote{This  superb  quote subquotes:  \enquote{nice
 isn't it ?}}
 ```
+
+
+#### Emacs and flyspell
+
+Force latex mode and flyspell:
+```latex
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% flyspell-mode: 't'
+%%% End: 
+```
+
+
+
+Force flyspell language:
+```latex
+%%% Local Variables: 
+%%% ispell-local-dictionary: "french"
+%%% End: 
+```
+
+
