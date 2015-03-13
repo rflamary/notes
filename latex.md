@@ -21,9 +21,25 @@
 \renewcommand\mathfamilydefault{\rmdefault} 
 ```
 
-For those who don't like the beamer math foont.
+For those who don't like the beamer math font.
+
+#### Beamer references
+To change from icons to text:
+
+```latex
+\setbeamertemplate{bibliography item}[text]
+```
+
+To change the color of the references:
+```latex
+\setbeamercolor{bibliography item}{fg=black,bg=blanc}
+\setbeamercolor{bibliography entry title}{fg=black,bg=blanc}
+\setbeamercolor{bibliography entry author}{fg=black,bg=blanc}
+```
+
 
 ### Misc
+
 #### Context sensitive quotation
 Idea: automatically get quotation according to the language.
 
@@ -57,6 +73,14 @@ Force flyspell language:
 %%% Local Variables: 
 %%% ispell-local-dictionary: "french"
 %%% End: 
+```
+
+
+#### Margins for the itemize/enumerate
+
+To set the margin:
+```latex
+\addtolength{\leftmargini}{2.5em} 
 ```
 
 
