@@ -37,6 +37,13 @@ To change the color of the references:
 \setbeamercolor{bibliography entry author}{fg=black,bg=blanc}
 ```
 
+### Graphics
+#### Graphics Path
+To tell LaTeX where to find image:
+```latex
+\graphicspath{ {images_folder/}{/path/to/other/folder/}{/path/to/other/folder2/} }
+```
+
 
 ### Misc
 
