@@ -37,6 +37,14 @@ To change the color of the references:
 \setbeamercolor{bibliography entry author}{fg=black,bg=blanc}
 ```
 
+#### Beamer 4x4 slides
+
+```bash
+$ pdfnup --nup 2x2 --frame false --noautoscale false --landscape --delta "0.2cm 0.3cm" --scale 1 SOURCE.pdf --outfile TARGET.pdf
+```
+
+
+
 ### Graphics
 #### Graphics Path
 To tell LaTeX where to find image:
