@@ -121,3 +121,39 @@ for name in args.__dict__:
 
 ```
 
+#### String formatting
+##### Interpolation with %
+Equivalent to 'sprintf':
+```python
+# % operator
+text = "%d little pigs come out or I'll %s and %s and %s" % \
+       (3, 'huff', 'puff', 'blow down')
+print(text)
+
+# Naming argument (e.g., for reuse)
+text = 'Argument %(test)s reuse: %(test)' % {'test' : 'ARG'}
+print(text)
+
+# BEWARE (tuple)
+name = (1, 2, 3)
+# text = "Foo bar: %s" % name # TypeError
+text = "Foo bar: %s" % (name,) # Correct (but ugly)
+print(text)
+```
+
+#### Method: format
+```python
+text = "{} little pigs come out or I'll {} and {} and {}".format(3, 'huff', 'puff', 'blow down')
+print(text)
+
+# Naming argument (e.g., for reuse)
+text = 'Argument {test} reuse: {test}'.format(test='ARG')
+print(text)
+
+# Misc
+# Positional reference: 
+# "{} {}" is equivalent to "{0} {1}"
+# but "{2} {1} {0}" will not format the same as "{0} {1} {2}"
+"Weight in tons {0.weight}"      # 'weight' attribute of first positional arg
+"Units destroyed: {players[0]}" # First element of keyword argument 'players'.
+```
