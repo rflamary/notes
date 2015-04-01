@@ -86,9 +86,12 @@ parser = argparse.ArgumentParser(description='Short description')
 parser.add_argument('-v','--verbose', action='store_true',default=False,help='print informations')
 
 # Add required argument
-parser.add_argument('task',help='trask to perform',default='')
+parser.add_argument('task',help='task to perform',default='')
 
-# Add positionnal argument (list)
+# Add positional argument (list)
+# positional argument  = the program  should know  what to do  with this
+# argument, solely based on where it appears (e.g., the copy command
+# 'cp SRC DEST')
 parser.add_argument('list', metavar='filter', type=str, nargs='*', help='list of string')
 # metavar: name of the variable in help
 # nargs:
