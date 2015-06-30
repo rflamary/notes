@@ -87,6 +87,10 @@ parser.add_argument('-v','--verbose', action='store_true',default=False,help='pr
 
 # Add required argument
 parser.add_argument('task',help='task to perform',default='')
+# Add required input file
+parser.add_argument('infile', help='SRT file', metavar='INPUT_FILE', nargs='?', type=argparse.FileType('r'), default=sys.stdin)
+# Add required output file
+parser.add_argument('outfile', nargs='?', type=argparse.FileType('w'), default=sys.stdout)
 
 # Add positional argument (list)
 # positional argument  = the program  should know  what to do  with this
