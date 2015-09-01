@@ -33,3 +33,11 @@ Extension folder is
 ```
 
 You also need to install **pstoediitt** through Macport or Fink. 
+
+### Convert svg to eps 
+``` 
+$ inkscape in.svg -E out.eps --export-ignore-filters --export-ps-level=3
+
+```
+
+
