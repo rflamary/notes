@@ -161,3 +161,13 @@ print(text)
 "Weight in tons {0.weight}"      # 'weight' attribute of first positional arg
 "Units destroyed: {players[0]}" # First element of keyword argument 'players'.
 ```
+
+
+
+### Pip
+
+Uninstall all user installed libraries
+
+```
+pip freeze --user | xargs pip uninstall -y
+```
