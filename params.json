@@ -1,0 +1,6 @@
+{
+  "name": "Notes",
+  "tagline": "Notes and tricks",
+  "body": "## Notes and tricks\r\n\r\nThis repository contains several command lines, tricks and scripts.\r\n\r\nThe tricks are listed in the following documents.\r\n\r\n* [Linux and Ubuntu](linux.md)\r\n* [sed](sed.md)\r\n* [git](git.md)\r\n* [Inkscape](inkscape.md)\r\n* [Python](python.md)\r\n* [Matlab](matlab.md)\r\n* [Latex](latex.md)\r\n* [Julia](julia.md)\r\n\r\nNote that additionnal scripts are available in the subfolders.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
