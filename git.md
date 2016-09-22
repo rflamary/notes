@@ -19,3 +19,8 @@ $ git checkout myBranch # Switch to "myBranch"
 $ git fetch origin # Gets you up to date with origin
 $ git merge origin/master # Merge with master
 ```
+#### Discard all local changes
+
+```bash
+$ git reset --hard HEAD
+```
