@@ -31,3 +31,10 @@ In order to allow certificate based connexion to a ssh server
 ```bash
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub login@server
 ```
+
+#### Amazon aws
+
+Copy all file in a folder to an aws s3 folder
+```bash
+$ ls * |xargs -n 1 -I {} aws s3 cp {} "s3://URL" 
+```
