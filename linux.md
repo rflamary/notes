@@ -32,6 +32,24 @@ In order to allow certificate based connexion to a ssh server
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub login@server
 ```
 
+#### .ssh/confif file
+
+Simple examples for ssh config file
+
+```
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+Host other_pc
+  Hostname 192.168.0.something
+  User username 
+Host cproxy
+  Hostame 192.168.0.something
+  User username
+  ProxyCommand ssh user@proxy-server.example.com -W %h:%p
+```
+
+
 #### Amazon aws
 
 Copy all file in a folder to an aws s3 folder
