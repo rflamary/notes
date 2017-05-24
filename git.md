@@ -24,3 +24,20 @@ $ git merge origin/master # Merge with master
 ```bash
 $ git reset --hard HEAD
 ```
+
+
+#### Fast git commit all changed files in repository
+
+add this to the .bashrc
+
+```bash
+function gcm { # gcm wathever text you want
+eval $(echo git commit . -m "\"$@\"")
+}  
+```
+
+Then you can perform a commit on all modified and added files with 
+```bash
+$ gcm comment text
+```
+where ther is no need for quotes around the comment text!
