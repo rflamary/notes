@@ -43,7 +43,7 @@ $ gcm comment text
 where ther is no need for quotes around the comment text!
 
 
-#### Create empty git on server
+#### Create empty git on remote server
 
 
 ```bash
@@ -65,4 +65,12 @@ Add thge following lines:
 Now we set it bare : 
 ```bash
 git config --bool core.bare true
+```
+
+
+#### Upload local git to empty remote
+
+```bash
+git remote add origin login@server.com:path/to/repo.git
+git push origin -u master
 ```
