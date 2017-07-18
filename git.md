@@ -41,3 +41,28 @@ Then you can perform a commit on all modified and added files with
 $ gcm comment text
 ```
 where ther is no need for quotes around the comment text!
+
+
+#### Create empty git on server
+
+
+```bash
+mkdir -p git/mon-site.git
+cd git/mon-site.git 
+git init-db
+```
+Add master to the repo: 
+```bash
+nano git/mon-site.git/.git/config
+```
+
+Add thge following lines: 
+```
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+```
+Now we set it bare : 
+```bash
+git config --bool core.bare true
+```
