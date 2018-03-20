@@ -25,6 +25,12 @@ $ git merge origin/master # Merge with master
 $ git reset --hard HEAD
 ```
 
+#### ignore subfolder that are git repos
+
+```bash
+find . -name .git -type d -prune | sed 's/.git//g' |sed 's/\.\///g' >> .gitignore
+```
+
 
 #### Fast git commit all changed files in repository
 
