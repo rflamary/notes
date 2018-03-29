@@ -56,3 +56,11 @@ Copy all file in a folder to an aws s3 folder
 ```bash
 $ ls * |xargs -n 1 -I {} aws s3 cp {} "s3://URL" 
 ```
+
+
+#### Convert images to mp4 movie
+
+```bash
+$ convert -delay 20 *.png movie.mp4
+```
+
