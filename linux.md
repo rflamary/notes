@@ -64,3 +64,10 @@ $ ls * |xargs -n 1 -I {} aws s3 cp {} "s3://URL"
 $ convert -delay 20 *.png movie.mp4
 ```
 
+#### Disable autofocus opn webcam
+
+```bash
+$ v4l2-ctl --set-ctrl=focus_auto=0
+```
+
+
