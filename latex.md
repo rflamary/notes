@@ -98,4 +98,9 @@ To set the margin:
 \addtolength{\leftmargini}{2.5em} 
 ```
 
+#### Remove Type 3 fonts from figure pdf 
+
+```bash
+inkscape -f crappy.pdf -T --export-pdf=awesome.pdf
+```
 
