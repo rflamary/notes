@@ -70,4 +70,13 @@ $ convert -delay 20 *.png movie.mp4
 $ v4l2-ctl --set-ctrl=focus_auto=0
 ```
 
+#### Get SSL let's encrypt certificate
+
+Think about descativating nginx so that the temporary server works and install the wawesome certbot
+
+```bash
+$ sudo certbot certonly --rsa-key-size 2048 --standalone --agree-tos --no-eff-email --email your@email.com -d your.server.com
+
+```
+
 
