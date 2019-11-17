@@ -79,4 +79,7 @@ $ sudo certbot certonly --rsa-key-size 2048 --standalone --agree-tos --no-eff-em
 
 ```
 
+keys will be stored for use in apache/nginx in /etc/letsencrypt/live/your.server.com/fullchain.pem
+
+
 
