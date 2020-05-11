@@ -171,3 +171,15 @@ Uninstall all user installed libraries
 ```
 pip freeze --user | xargs pip uninstall -y
 ```
+
+
+
+### Matplotlib without font 3 in PDF
+
+This is a pay every time i have to validate the PDF for a neurips submission! You just need to execute this before saveing the file:
+
+```python
+import matplotlib
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
+```
