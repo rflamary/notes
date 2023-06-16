@@ -47,6 +47,9 @@ Host cproxy
   Hostame 192.168.0.something
   User username
   ProxyCommand ssh user@proxy-server.example.com -W %h:%p
+Host cproxy_other
+  Hostame 192.168.0.something
+  ProxyJump other_pc
 ```
 
 
